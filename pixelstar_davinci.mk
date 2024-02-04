@@ -11,18 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Evolution-X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common PixelStar stuff.
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := UNOFFICIAL
+# Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := false
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BUILD_VIMUSIC := true
-TARGET_INCLUDE_GRAMOPHONE := true
-TARGET_USES_MINI_GAPPS := true
 
-PRODUCT_NAME := evolution_davinci
+# Specific flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+PIXELSTAR_BUILD_TYPE := Unofficial
+USE_PIXEL_CHARGER := true
+
+PRODUCT_NAME := pixelstar_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_davinci.mk
+    $(LOCAL_DIR)/pixelstar_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_davinci-user \
-    evolution_davinci-userdebug \
-    evolution_davinci-eng
+    pixelstar_davinci-user \
+    pixelstar_davinci-userdebug \
+    pixelstar_davinci-eng
