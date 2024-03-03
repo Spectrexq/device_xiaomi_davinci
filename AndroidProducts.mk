@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelstar_davinci.mk
+    $(LOCAL_DIR)/banana_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixelstar_davinci-user \
-    pixelstar_davinci-userdebug \
-    pixelstar_davinci-eng
+    banana_davinci-user \
+    banana_davinci-userdebug \
+    banana_davinci-eng
