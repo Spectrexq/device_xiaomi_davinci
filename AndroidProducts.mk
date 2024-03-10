@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_davinci.mk
+    $(LOCAL_DIR)/superior_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_davinci-user \
-    cipher_davinci-userdebug \
-    cipher_davinci-eng
+    superior_davinci-user \
+    superior_davinci-userdebug \
+    superior_davinci-eng

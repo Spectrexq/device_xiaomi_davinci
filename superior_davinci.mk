@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common cipher stuff.
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
+# Inherit some common superior stuff.
+$(call inherit-product, vendor/superior/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
@@ -21,7 +21,7 @@ TARGET_BUILD_VIMUSIC := true
 TARGET_INCLUDE_GRAMOPHONE := true
 TARGET_USES_MINI_GAPPS := true
 
-PRODUCT_NAME := cipher_davinci
+PRODUCT_NAME := superior_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
@@ -37,6 +37,12 @@ BUILD_FINGERPRINT := Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.1.4.0.RFJMIXM
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-CIPHER_GAPPS := true
-TARGET_USES_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+BUILD_WITH_GAPPS := true
+TARGET_INCLUDE_MATLOG := true
+USE_MOTO_CALCULATOR := true
+TARGET_SUPPORTS_BLUR := true
+SUPERIOR_UDFPS_ANIMATIONS := false
+USE_MOTO_CLOCK := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+TARGET_BUILD_VIMUSIC := true
